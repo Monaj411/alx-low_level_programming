@@ -12,14 +12,11 @@
 
 int main(void)
 {
-int sum, num;
+int i, res;
 
-for (num = 0; num < 1024; ++num)
-{
-if ((num % 3 == 0) || (num % 5 == 0))
-sum += num;
-}
-printf("%d\n", sum);
-
+for (i = 0; i < 1024; i++)
+if (i % 3 == 0 || i % 5 == 0)
+res += i;
+printf("%d\n", res);
 return (0);
 }
